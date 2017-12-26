@@ -3,7 +3,7 @@
 # https://bitcointalk.org/index.php?topic=1365894
 # https://github.com/vergecurrency/verge
 
-FROM alpine:latest
+FROM ubuntu:latest
 
 MAINTAINER Simon Medved <simon@medved.in>
 
