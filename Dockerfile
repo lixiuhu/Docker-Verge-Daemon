@@ -8,10 +8,12 @@ FROM ubuntu:latest
 MAINTAINER Simon Medved <simon@medved.in>
 
 RUN apt-get update 
-RUN apt-get install software-properties-common python-software-properties 
+RUN apt-get install -y software-properties-common 
+RUN apt-get install -y python-software-properties 
 RUN add-apt-repository ppa:bitcoin/bitcoin
 RUN apt-get update 
-RUN apt-get install libdb4.8-dev libdb4.8++-dev 
+RUN apt-get install -y libdb4.8-dev 
+RUN apt-get install -y libdb4.8++-dev 
 RUN apt-get install -y \
     build-essential \
     git \
