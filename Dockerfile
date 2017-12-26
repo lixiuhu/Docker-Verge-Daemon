@@ -7,7 +7,7 @@ FROM alpine:latest
 
 MAINTAINER Simon Medved <simon@medved.in>
 
-RUN sudo add-apt-repository ppa:bitcoin/bitcoin && apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev && apt-get install -y \
+RUN add-apt-repository ppa:bitcoin/bitcoin && apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev && apt-get install -y \
     build-essential \
     git \
     libboost-all-dev \
